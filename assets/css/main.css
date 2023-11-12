@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* MAIN.sass
+ *
+ * Fichier principal qui va importer les autres fichiers.  
+ * Stucture 7 - 1 = un fichier qui gère 7 dossiers. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red;
+}
