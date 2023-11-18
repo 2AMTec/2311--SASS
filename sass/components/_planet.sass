@@ -1,0 +1,44 @@
+@use "../abstracts/_all" as abstracts
+
+
+.planet
+    @include abstracts.circle(150px)
+    
+    
+    &--mercury
+        @include abstracts.circle(abstracts.$mercury-size, white)
+
+    &--venus
+        @include abstracts.circle(abstracts.$venus-size, purple)
+
+    &--earth
+        @include abstracts.circle(abstracts.$earth-size, cyan)
+        position: relative
+        animation: animation-rotate 4s linear infinite 
+
+
+    &--mars
+        @include abstracts.circle(abstracts.$mars-size, red)
+        position: relative
+        animation: animation-rotate 4s linear infinite 
+    &--jupiter
+        @include abstracts.circle(abstracts.$earth-size, green)
+
+    &--saturne
+        @include abstracts.circle(abstracts.$earth-size, blue)
+
+
+    &--uranus
+        @include abstracts.circle(abstracts.$earth-size, yellow)
+
+
+    &--neptune
+        @include abstracts.circle(abstracts.$earth-size,  pink)
+
+
+@keyframes animation-rotate
+    0%
+        transform: rotate(0)
+
+    100%
+        transform: rotate(360deg)
